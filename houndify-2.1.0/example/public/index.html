@@ -5,18 +5,20 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <!--<script src="https://translation.googleapis.com/language/translate/v2"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
+    <link rel = "stylesheet" href="./style.css">
   </head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
   <body>
-<div>
-<p>Example Youtube URL's:</p>
-<ul>
-<li>https://www.youtube.com/watch?v=FIbfq51NjhQ</li>
-<li>https://www.youtube.com/watch?v=8a7uXgdLGoI</li>
-</ul>
-</div>
+    <div class = "spec"></div>
+    <div class = "overlay">
+<div class = "ui center aligned basic segment container box">
+  <p>Example Youtube URL's:</p>
+  <ul>
+    <li>https://www.youtube.com/watch?v=FIbfq51NjhQ</li>
+    <li>https://www.youtube.com/watch?v=8a7uXgdLGoI</li>
+  </ul>
 <div>
   <input id="textUrl" type="text" placeholder="Enter Youtube URL" />
   <button id="yInput" onclick="uploadStreamURL()">Use Video</button>
@@ -25,6 +27,7 @@
 <div>
   <input id="streamUrl" type="text" placeholder="Enter FMT STREAM URL" />
   <button id="fmtInput" onclick="uploadFmtURL()">Use FMT STREAM URL</button>
+</div>
 </div>
     <div class="ui center aligned basic segment container">
       <h2 class="ui block basic header">Houndify Youtube Translator</h2>
@@ -63,11 +66,10 @@
     </div>
 
     <center>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/80_-_Machu_Picchu_-_Juin_2009_-_edit.2.jpg/1049px-80_-_Machu_Picchu_-_Juin_2009_-_edit.2.jpg" alt="Mountain View">
-
         <video id="movie" width="500" height ="500" controls>
       		<source src= "" type ="video/mp4">
     	</video>
+    </div>
     <script>
       //HTML ELEMENTS FOR DISPLAYING RESPONSE AND INFO JSON's
       var responseElt = document.getElementById("responseJSON");
